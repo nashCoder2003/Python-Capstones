@@ -1,0 +1,14 @@
+import random
+
+# User makes a guess
+guess = input("Heads or Tails? ").capitalize()
+
+# Flip the coin
+flip = random.choice(["Heads", "Tails"])
+print("Coin landed on:", flip)
+
+# Check result
+if guess == flip:
+    print("You guessed it right! 🎉")
+else:
+    print("Better luck next time!")
